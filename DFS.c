@@ -30,7 +30,7 @@ void dfsTraversal(int root, struct Node* adjlist[], int visited[]) {
 		do {
 			dfsTraversal((*node)->next->data, adjlist, visited);
 			node = &((*node)->next);
-	} while(node != head);
+		} while(node != head);
 	for (int i=0;i<SIZE;i++)
 		if (!visited[i])
 			dfsTraversal(i,adjlist,visited);
